@@ -29,7 +29,9 @@ try:
     sys.modules['readline'] = readline
 except ImportError:
     import readline
-
+except NameError:
+    pass
+    
 import cmd
 import inspect
 import importlib
